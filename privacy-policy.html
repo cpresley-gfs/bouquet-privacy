@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bouquet Privacy Policy</title>
+<style>
+:root { --bg: #faf6ee; --fg: #3e2e22; --muted: #6b5a4a; --accent: #a9744a; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #2a211a; --fg: #f5f1e6; --muted: #d8b26e; --accent: #e8b83a; }
+}
+body { margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 1.9em; line-height: 1.2; }
+h2 { margin-top: 2em; font-size: 1.3em; }
+h3 { font-size: 1.05em; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+code { font-size: 0.92em; }
+li { margin: 0.3em 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>Bouquet — Privacy Policy</h1>
+<p><strong>Effective date:</strong> {{EFFECTIVE_DATE}}<br>
+<strong>Developer:</strong> {{DEVELOPER_NAME}} ("we", "us")<br>
+<strong>Contact:</strong> {{CONTACT_EMAIL}}<br>
+<strong>App:</strong> Bouquet (Android package <code>{{PACKAGE_NAME}}</code>)</p>
+<p>Bouquet is a cozy flower-sorting puzzle game. It is intended for adults (18+). We do not knowingly collect data from anyone under 18. This policy explains what the app stores, what it sends off your device, and the choices you have.</p>
+<h2>1. The short version</h2>
+<ul>
+<li>There is <strong>no account, no sign-in and no server of ours</strong>. We do not receive your name or email address through the game.</li>
+<li>Your progress is saved <strong>on your device</strong>. Android Auto Backup may copy it to your own Google Drive.</li>
+<li>The game uses third-party services from Google for <strong>purchases, ads, analytics and crash reports</strong>. They collect the data described below.</li>
+<li>If you are in the European Economic Area (EEA) or the UK, the game asks for your consent before analytics, crash reporting and personalised ads run. You can change your choice any time in <strong>Settings → Privacy options</strong>.</li>
+</ul>
+<h2>2. Information stored on your device</h2>
+<p>Your game progress (level, coins, hearts, boosters, garden progress, streaks, Daily Bouquet history, settings and the list of purchases already processed) is stored in a local save file. This file stays on your device. If Android Auto Backup is on for your device, Android may back it up to your Google account and restore it on a new device; this is handled by Google under your Google account settings, not by us.</p>
+<h2>3. Information collected by third-party services</h2>
+<p>These services are built into the app. Each runs under its own provider's policy, linked here.</p>
+<h3>3.1 Google Play Billing (in-app purchases)</h3>
+<p>Purchases are processed by Google Play. We never see your payment card details. The app receives a purchase token and product ID from Google Play so it can deliver what you bought and restore it later.<br>
+Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> and <a href="https://play.google.com/about/play-terms/">https://play.google.com/about/play-terms/</a></p>
+<h3>3.2 Google AdMob and Google User Messaging Platform (ads and consent)</h3>
+<p>Bouquet shows <strong>optional rewarded ads</strong> (for example, to earn a heart or double coins) and <strong>interstitial ads</strong> between some levels. Ads are served by Google AdMob. The AdMob SDK automatically collects and shares with Google: your <strong>IP address</strong> (to estimate approximate location), <strong>user product interactions</strong> (app launches, taps, video views), <strong>diagnostic information</strong> (app and SDK performance), and <strong>device and account identifiers</strong> such as the Android advertising ID and app set ID, for advertising, analytics and fraud prevention. Data is encrypted in transit. Source: <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">https://developers.google.com/admob/android/privacy/play-data-disclosure</a><br>
+In the EEA/UK, Google's User Messaging Platform shows a consent form and stores your choice on your device. You can reopen it in <strong>Settings → Privacy options</strong>.<br>
+You can reset or opt out of your advertising ID in your Android settings (Settings → Privacy → Ads).<br>
+Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> · AdMob: <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a></p>
+<h3>3.3 Firebase Analytics (Google Analytics for Firebase)</h3>
+<p>We use Firebase Analytics to understand how the game is played (for example, which levels are hard, where players stop) so we can fix and balance it. It automatically collects an app-instance ID, the advertising ID (if allowed), approximate location derived from a masked IP address, in-app purchase events (product ID and price), and screen/session events. We also log gameplay events such as level start, win and fail, ad and purchase interactions, garden progress, and notification opens. We never send your name or email. The game creates a random installation ID when it is first opened; it is not linked to you or your Google account, and it is used to tell installs apart in analytics and crash reports (and, later, to split players into test groups for game-balance experiments). Source: <a href="https://support.google.com/analytics/answer/11582702">https://support.google.com/analytics/answer/11582702</a><br>
+Policy: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+<h3>3.4 Firebase Crashlytics (crash reports)</h3>
+<p>If the app crashes, Crashlytics collects the stack trace, the app state and device information at the time of the crash, and an installation identifier (including the random installation ID above), so we can fix the problem. Source: <a href="https://firebase.google.com/docs/android/play-data-disclosure">https://firebase.google.com/docs/android/play-data-disclosure</a><br>
+Policy: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+<h3>3.5 Game settings file (remote configuration)</h3>
+<p>At launch the game may download a small settings file (game-balance numbers such as prices of in-game coins items and ad pacing) from a static web host ({{REMOTE_CONFIG_HOST}}). Like any web request, the host can see your IP address. No personal data is uploaded.</p>
+<h2>4. Consent and analytics</h2>
+<ul>
+<li>Analytics and crash reporting start <strong>off</strong> on every install and stay off until the consent check below allows them.</li>
+<li><strong>EEA / UK (and other places where consent is required):</strong> the consent form appears once, after you finish level 3. Analytics and crash reporting turn on only if you consent to "store and/or access information on a device" (IAB TCF purpose 1). If you decline, or the choice can't be read, they stay off. Ads are requested only after you have made a choice, and follow it.</li>
+<li><strong>Elsewhere:</strong> analytics and crash reporting are on, and ads are shown as described above. You can limit ad personalisation in your Android settings.</li>
+<li>You can change your choice at any time in <strong>Settings → Privacy options</strong> (shown where the consent form applies).</li>
+</ul>
+<h2>5. Notifications</h2>
+<p>After you finish level 10, the game asks whether you'd like reminders. Only if you say yes does Android ask for the notification permission (Android 13+); if you say no, it won't ask again. With your permission, the game schedules <strong>local notifications</strong> on your device when you leave it: your hearts are full again, your daily gift is ready (6 pm the next day), or a gentle reminder 3 and 7 days after you last played. They are created on your device, not sent from a server, and are cancelled as soon as you open the game. At most one arrives per day, and none between 9 pm and 9 am (they wait until 9 am). Turn them off any time in <strong>Settings → Notifications</strong> or in Android settings. When you open the game from a notification, an analytics event records which kind it was (if analytics is allowed).</p>
+<h2>6. Permissions the app uses</h2>
+<p>Internet and network state (ads, purchases, analytics, settings file); vibration (haptic feedback); post notifications (optional, local reminders), plus "run at startup" and "keep awake" so scheduled reminders survive a restart and can be delivered; Google Play billing; advertising ID (ads/analytics, can be reset or opted out). The game does not use exact alarms.</p>
+<h2>7. How we use information</h2>
+<p>To run the game, process purchases, show ads, measure and improve gameplay, fix crashes, prevent fraud and comply with law. We do not sell your personal information. We do not use your data for profiling beyond the advertising and analytics provided by the Google services above.</p>
+<h2>8. Sharing</h2>
+<p>We do not share data with anyone ourselves. The Google services above receive data directly from the app as described. Firebase states that it does not transfer end-user data to third parties except subprocessors acting for it or as instructed.</p>
+<h2>9. Retention and deletion</h2>
+<p>There is no account to delete. Local data is removed when you uninstall the app (Auto Backup copies in your Google Drive can be removed in your Google account's backup settings). Data held by Google (analytics, crash and ad data) follows Google's retention settings; Analytics event data is kept for the period configured in our Firebase project (<strong>{{ANALYTICS_RETENTION}}</strong>). To ask us about data linked to your device's identifiers, email {{CONTACT_EMAIL}}; you can also reset your advertising ID in Android settings.</p>
+<h2>10. Your rights</h2>
+<p>Depending on where you live (for example under the GDPR/UK GDPR or US state laws) you may have rights to access, correct, delete, or object to processing of your personal data, and to withdraw consent at any time. Withdraw consent in <strong>Settings → Privacy options</strong>, or contact {{CONTACT_EMAIL}}. If you are in the EEA/UK you may also complain to your local data protection authority.</p>
+<h2>11. Children</h2>
+<p>Bouquet is for adults 18 and over and is not directed to children.</p>
+<h2>12. Security</h2>
+<p>Data sent by the Google SDKs is encrypted in transit (TLS). No method of storage or transmission is perfectly secure.</p>
+<h2>13. International transfers</h2>
+<p>Google processes data in the United States and other countries. Where required, transfers rely on the safeguards described in Google's policies.</p>
+<h2>14. Changes</h2>
+<p>We may update this policy. The effective date above shows the latest version; material changes will be noted in the app or on this page.</p>
+<h2>15. Contact</h2>
+<p>{{DEVELOPER_NAME}} · {{CONTACT_EMAIL}} · {{POSTAL_ADDRESS_IF_REQUIRED}}</p>
+</main>
+</body>
+</html>
